@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://cx2vva4fapb6v"]
+
+[ext_resource type="Script" path="res://platform_character.gd" id="1_7ux0n"]
+[ext_resource type="Texture2D" uid="uid://cws3unmxr0p5d" path="res://assets/tileYellow_02.png" id="1_85evu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a5rer"]
+size = Vector2(32, 68)
+
+[node name="PlatformCharacter" type="CharacterBody2D"]
+script = ExtResource( "1_7ux0n" )
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+rotation = 1.5708
+texture = ExtResource( "1_85evu" )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( "RectangleShape2D_a5rer" )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
