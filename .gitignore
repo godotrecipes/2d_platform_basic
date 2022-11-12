@@ -1,2 +1,7 @@
-# Godot 4+ specific ignores
-.godot/
+__pycache__
+*.pyc
+.DS_Store
+*~
+.idea
+.import/
+logs/
