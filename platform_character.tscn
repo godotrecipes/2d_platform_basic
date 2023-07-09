@@ -14,7 +14,6 @@ rotation = 1.5708
 texture = ExtResource("2_b0bm5")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-current = true
 zoom = Vector2(1.5, 1.5)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
